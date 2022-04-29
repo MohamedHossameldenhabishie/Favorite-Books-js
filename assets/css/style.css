@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    color: inherit;
+    list-style: none;
+    outline: none;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.text__red{
+    color: #c0392b;
+}
+.app__wrapper{
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius:15px;
+    box-shadow: 2px 2px 10px 0 #f5f6fa;
+    overflow: hidden;
+}
+
+
+.app__header{
+    text-align: center;
+    background-color: #2980B9;
+    padding: 15px;
+}
+.app__header h1{
+    color: #f5f6fa;
+    margin-block:10px 20px;
+    font-size: 2em;
+}
+.app__search input{
+    padding: 7px;
+    border: 1px solid transparent;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+}
+.app__search input:hover{
+    border: 1px solid #BB4c89;
+}
+
+.app__content{
+    padding: 15px;
+}
+
+.app__content h2{
+    color: #BB4c89;
+}
+.add__list li{
+    border-left: 5px solid #f5f6fa;
+    transition: all 0.3s ease;
+    padding:15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add__list{
+    margin-block: 40px;
+}
+.add__list span{
+    font-size: 1.5em;
+}
+.add__list li:hover{
+    border-left:5px solid #BB4c89;
+}
+.delete{
+    padding: 10px;
+    border-radius: 3px;
+    border-color: #c0392b;
+    background-color: #f5f6fa;
+    color: #c0392b;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.delete:hover{
+    opacity: 1;
+}
+
+.add__app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add__app input{
+    padding: 7px;
+    font-size: 0.9em;
+    border: 1px solid #2980B9;
+    border-radius: 3px 0 0 3px;
+}
+.add__app button{
+    padding: 7px 15px;
+    font-size: 0.9em;
+    background-color: #2980B9;
+    color: #f5f6fa;
+    cursor: pointer;
+    border: 1px solid #2980B9;
+    border-radius:0 3px 3px 0;
+
+}
+.danger{
+    color:#c0392b;
+    text-transform: capitalize;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+.clear{
+    padding: 10px;
+    border: 1px solid #c0392b;
+    background-color: #c0392b;
+    color: #f5f6fa;
+    font-size: 1.5em;
+    border-radius: 3px 5px;
+    margin: 20px;
+    transition: all 0.3s ease;
+}
+.clear:hover{
+    transform: scale(1.2);
+}

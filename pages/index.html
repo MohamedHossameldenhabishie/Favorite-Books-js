@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Books Favorite</title>
+</head>
+<body>
+    <div class="app">
+        <section class="app__wrapper">
+            <header class="app__header">
+                <h1>My Favorite Books</h1>
+                <form class="app__search"onsubmit="preventSubmit(event)">
+                    <input type="search" placeholder="Search books....." oninput="searchBooks()">
+                </form>
+            </header>
+            <main class="app__content">
+                <h2>Books to Read</h2>
+                <ul class="add__list">
+                  
+                </ul>
+                <form class="add__app" onsubmit="addBook(event)">
+                    <input type="text" placeholder="Add a book" required>
+                    <button>Add</button>
+                </form>
+                <button onclick="clearAll()" class="clear">clear all</button>
+            </main>
+        </section>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
